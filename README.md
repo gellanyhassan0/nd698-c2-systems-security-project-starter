@@ -4,6 +4,12 @@
 
 **Step 2:** Download a copy of the [ubuntu.ova file from S3](https://udacity-send.s3-us-west-2.amazonaws.com/analysis-image.ova). Don't be concerned if it takes some time to download. If 30 minutes passes and the file has not downloaded, cancel and reattempt the download. If it's still not successful, please reach out to Udacity staff.
 
+# Docker deploy
+<code>docker pull gellany/gellany_nd698</code><br>
+<code>docker run --publish 80:80 -i -t d7bda2228aab /bin/bash</code><br>
+<code>apache2 is not running</code><br>
+
+
 **Step 3:** Download & install Oracle VirtualBox software which will be used as our virtualization tool for loading the OVA file downloaded above. [You can download it here](https://www.virtualbox.org/wiki/Downloads).
 
 **Step 4:** Download and Install Docker Desktop for its official website. Depending on your operating system, you can follow one of the below links to download and set up docker on your computer. 
