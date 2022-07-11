@@ -9,6 +9,7 @@
 <code>docker run --publish 80:80 -i -t d7bda2228aab /bin/bash</code><br>
 <code>apache2 is not running</code><br>
 <code>service apache2 start</code><br>
+<code>telnet 0.0.0.0 80</code>get<br>
 
 
 **Step 3:** Download & install Oracle VirtualBox software which will be used as our virtualization tool for loading the OVA file downloaded above. [You can download it here](https://www.virtualbox.org/wiki/Downloads).
