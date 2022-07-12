@@ -133,7 +133,7 @@ Now that the cyber-attack has been successfully contained, you are also tasked w
 <code>runuser -u _gvm -- gvmd --create-user="myuser" --password="mypassword" || true</code><br>
 <code>gvm-check-setup</code><br>
 <code>apt-get upgrade gvm</code><br>
-<code>docker restart [container-name]</code><br>
+<code>docker container rm [container-name]</code><br>
 
 
 ### Task 2: Patching Apache
