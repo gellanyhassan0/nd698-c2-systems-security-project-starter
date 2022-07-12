@@ -11,6 +11,9 @@
 <code>service apache2 status</code><br>
 <code>apache2 is not running</code><br>
 <code>service apache2 start</code><br>
+<code>service ssh status</code><br>
+<code>ssh is not running</code><br>
+<code>service ssh start</code><br>
 <code>telnet 0.0.0.0 80</code>get<br>
 <code>curl 0.0.0.0:80</code><br>
 <code>http://0.0.0.0/</code><br>
