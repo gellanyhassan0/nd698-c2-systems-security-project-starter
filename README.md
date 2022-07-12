@@ -120,6 +120,12 @@ So far, we have figured out that the attack was carried out through brute-forcin
 ### Task 1: OpenVAS Scan
 Now that the cyber-attack has been successfully contained, you are also tasked with further hardening the jump host server. As a first step, perform an OpenVAS vulnerability scan on the system and provide a snapshot of the vulnerabilities identified by the scan. Name the snapshot as`openvas_vulnerability_report.png`. 
 
+# Docker deploy
+<code>docker pull jeffleder/gvm-docker</code><br>
+<code>docker run --detach --publish 127.0.0.1:9392:9392 -e USERNAME="admin" -e PASSWORD="admin" --volume openvas:/data --name openvas --restart unless-stopped jeffleder/gvm-docker</code><br>
+<code>Username: admin
+Password: admin</code><br>
+
 ### Task 2: Patching Apache
 Once you have provided your report on the existing vulnerabilities on the system, you notice that the jump host is also running an Apache HTTP server which can be accessed from the internet and can serve as an attack point in future incidents. To harden the Apache server, you must remove the version banner from being publicly visible.  This would make it difficult for an attacker to perform reconnaissance on the server and launch attacks. Your goal is to identify and report the current Apache httpd server version and then the configuration change required to prevent the version number benign publicly accessible. Report both these details in the filename `apache_version_patching.txt`. 
 
