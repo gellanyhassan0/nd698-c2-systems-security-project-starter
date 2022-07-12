@@ -139,6 +139,8 @@ Now that the cyber-attack has been successfully contained, you are also tasked w
 
 scanning test 
 <code>docker run --name metasploitable -it tleemcjr/metasploitable2:latest sh -c "/bin/services.sh && bash"</code><br>
+<code>docker exec -it metasploitable2 /bin/bash</code><br>
+<code>ifconfig</code><br>
 
 
 ### Task 2: Patching Apache
