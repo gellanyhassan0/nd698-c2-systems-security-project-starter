@@ -130,7 +130,9 @@ Now that the cyber-attack has been successfully contained, you are also tasked w
 <code>Username: admin Password: admin</code><br>
 
 <code>docker exec -it openvas /bin/bash</code><br>
-<code>runuser -u _gvm -- gvmd --create-user="myuser" --password="mypassword" || true</code><br>
+<code>sudo runuser -u _gvm -- gvmd --create-user=Admin --new-password=12345</code><br>
+<code>User created with password '54e6f40d-e4e5-4f84-aad2-dd24bd7578a5'.</code><br>
+
 <code>gvm-check-setup</code><br>
 <code>apt-get upgrade gvm</code><br>
 <code>docker container rm [container-name]</code><br>
