@@ -8,7 +8,7 @@
 <code>docker pull gellany/gellany_nd698</code><br>
 <code>docker run --publish 80:80 -u ubuntu:ubuntu -i -t d7bda2228aab /bin/bash</code><br>
 <code>id</code><br>
-<code>sudo apt install git-all</code><br>
+<code>service apache2 status</code><br>
 <code>apache2 is not running</code><br>
 <code>service apache2 start</code><br>
 <code>telnet 0.0.0.0 80</code>get<br>
