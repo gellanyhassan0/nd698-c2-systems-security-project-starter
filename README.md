@@ -123,9 +123,9 @@ Now that the cyber-attack has been successfully contained, you are also tasked w
 # Docker deploy
 <code>docker pull jeffleder/gvm-docker</code><br>
 <code>docker run --detach --publish 127.0.0.1:9392:9392 -e USERNAME="admin" -e PASSWORD="admin" --volume openvas:/data --name openvas --restart unless-stopped jeffleder/gvm-docker</code><br>
-<code>Username: admin
-Password: admin</code><br>
-<code>http://127.0.0.1:9392/</code><br>
+
+<code>[http://127.0.0.1:9392/](http://127.0.0.1:9392/login)</code><br>
+<code>Username: admin Password: admin</code><br>
 
 <code>docker exec -it openvas /bin/bash</code><br>
 <code>runuser -u _gvm -- gvmd --create-user="myuser" --password="mypassword" || true</code><br>
