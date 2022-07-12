@@ -127,6 +127,13 @@ Now that the cyber-attack has been successfully contained, you are also tasked w
 Password: admin</code><br>
 <code>http://127.0.0.1:9392/</code><br>
 
+<code>docker exec -it openvas /bin/bash</code><br>
+<code>runuser -u _gvm -- gvmd --create-user="myuser" --password="mypassword" || true</code><br>
+<code>gvm-check-setup</code><br>
+<code>apt-get upgrade gvm</code><br>
+<code>docker restart [container-name]</code><br>
+
+
 ### Task 2: Patching Apache
 Once you have provided your report on the existing vulnerabilities on the system, you notice that the jump host is also running an Apache HTTP server which can be accessed from the internet and can serve as an attack point in future incidents. To harden the Apache server, you must remove the version banner from being publicly visible.  This would make it difficult for an attacker to perform reconnaissance on the server and launch attacks. Your goal is to identify and report the current Apache httpd server version and then the configuration change required to prevent the version number benign publicly accessible. Report both these details in the filename `apache_version_patching.txt`. 
 
