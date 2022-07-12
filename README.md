@@ -11,12 +11,14 @@
 <code>service apache2 status</code><br>
 <code>apache2 is not running</code><br>
 <code>service apache2 start</code><br>
-<code>service ssh status</code><br>
-<code>ssh is not running</code><br>
-<code>service ssh start</code><br>
 <code>telnet 0.0.0.0 80</code>get<br>
 <code>curl 0.0.0.0:80</code><br>
 <code>http://0.0.0.0/</code><br>
+
+<code>service ssh status</code><br>
+<code>ssh is not running</code><br>
+<code>service ssh start</code><br>
+<code>ssh ubuntu@172.17.0.2</code><br>
 
 
 **Step 3:** Download & install Oracle VirtualBox software which will be used as our virtualization tool for loading the OVA file downloaded above. [You can download it here](https://www.virtualbox.org/wiki/Downloads).
