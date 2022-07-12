@@ -21,6 +21,8 @@
 <code>service ssh start</code><br>
 <code>ssh ubuntu@172.17.0.2</code><br>
 
+<code>docker container rm [container-name]</code><br>
+
 
 **Step 3:** Download & install Oracle VirtualBox software which will be used as our virtualization tool for loading the OVA file downloaded above. [You can download it here](https://www.virtualbox.org/wiki/Downloads).
 
