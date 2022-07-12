@@ -137,7 +137,7 @@ Now that the cyber-attack has been successfully contained, you are also tasked w
 <code>apt-get upgrade gvm</code><br>
 <code>docker container rm [container-name]</code><br>
 
-# scanning test on metasploitable
+# scanning test by deploy metasploitable
 <code>docker run --name metasploitable -it tleemcjr/metasploitable2:latest sh -c "/bin/services.sh && bash"</code><br>
 <code>docker exec -it metasploitable2 /bin/bash</code><br>
 <code>ifconfig</code><br>
