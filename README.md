@@ -20,6 +20,7 @@
 <code>ssh is not running</code><br>
 <code>service ssh start</code><br>
 <code>ssh ubuntu@172.17.0.2</code><br>
+<code>scp -r ubuntu@172.17.0.2:/home/ubuntu/Downloads/ .</code><br>
 
 <code>docker container rm [container-name]</code><br>
 
