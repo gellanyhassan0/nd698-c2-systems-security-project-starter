@@ -96,6 +96,13 @@ Once you have ensured the presence of a unique malware file that could not be de
 
 ![What Will We Do About It?](Image6.png)
 
+<code>/var/ossec/bin/ossec-control status</code><br>
+<code>/var/ossec/bin/ossec-control start</code><br>
+<code>service apache2 status</code><br>
+<code>service apache2 start</code><br>
+
+
+
 ### Task 1: Implement HIDS
 The first security alarm about the ongoing cyberattack came from the Host-Based Intrusion Detection System is about multiple failed login attempts from a foreign IP address. Launch the host IDS and analyze the logs and events captured in the system. To verify that the IDS is up and working, try connecting to the virtual machine via SSH and notice the new login entry created in the IDS web UI.
 Take a snapshot of the newly created log lines and name it `succesful_ssh_logon.png`. This will ensure that the IDS system is working as expected and capturing logs in real-time. 
