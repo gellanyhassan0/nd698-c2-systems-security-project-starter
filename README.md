@@ -101,6 +101,10 @@ Once you have ensured the presence of a unique malware file that could not be de
 <code>service apache2 status</code><br>
 <code>service apache2 start</code><br>
 <code>http://0.0.0.0/ossec/</code><br>
+<code>service ssh status</code><br>
+<code>ssh is not running</code><br>
+<code>service ssh start</code><br>
+<code>ssh ubuntu@172.17.0.2</code><br>
 
 
 
