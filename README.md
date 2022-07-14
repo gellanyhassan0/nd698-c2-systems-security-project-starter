@@ -95,6 +95,7 @@ Once you have ensured the presence of a unique malware file that could not be de
 ## Section 2: Threat Mitigation
 
 ![What Will We Do About It?](Image6.png)
+![how ossec work?](7648_01_02.jpg)
 
 <code>/var/ossec/bin/ossec-control status</code><br>
 <code>/var/ossec/bin/ossec-control start</code><br>
