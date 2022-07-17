@@ -24,6 +24,7 @@
 <code>ssh is not running</code><br>
 <code>service ssh start</code><br>
 <code>ssh ubuntu@172.17.0.2</code><br>
+<code>scp -r ubuntu@172.17.0.2:file/file</code><br>
 
 
 
