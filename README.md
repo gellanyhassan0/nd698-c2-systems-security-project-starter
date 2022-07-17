@@ -116,6 +116,7 @@ Once you have ensured the presence of a unique malware file that could not be de
 
 <code>cp -r ossec.conf /var/ossec/etc/</code><br>
 <code>/var/ossec/bin/ossec-control restart</code><br>
+<code>ls ls var/ossec/logs/alerts</code><br>
 
 
 
