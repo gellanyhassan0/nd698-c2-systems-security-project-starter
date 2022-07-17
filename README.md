@@ -111,6 +111,7 @@ Once you have ensured the presence of a unique malware file that could not be de
 <code>ssh is not running</code><br>
 <code>service ssh start</code><br>
 <code>ssh ubuntu@172.17.0.2</code><br>
+<code>ssh root@172.17.0.2</code><br>
 
 <code>/var/ossec/bin/ossec-control restart</code><br>
 
