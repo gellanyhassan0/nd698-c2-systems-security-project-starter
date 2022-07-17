@@ -8,6 +8,7 @@
 <code>docker pull gellany/gellany_nd698</code><br>
 <code>docker image list</code><br>
 <code>docker run --publish 80:80 -u ubuntu:ubuntu -i -t d7bda2228aab /bin/bash</code><br>
+<code>docker run --publish 80:80 -i -t d7bda2228aab /bin/bash</code><br>
 <code>id</code><br>
 <code>service apache2 status</code><br>
 <code>apache2 is not running</code><br>
