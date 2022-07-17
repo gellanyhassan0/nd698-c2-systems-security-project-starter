@@ -114,7 +114,9 @@ Once you have ensured the presence of a unique malware file that could not be de
 <code>ssh ubuntu@172.17.0.2</code><br>
 <code>ssh root@172.17.0.2</code><br>
 
+<code>cp -r ossec.conf /var/ossec/etc/</code><br>
 <code>/var/ossec/bin/ossec-control restart</code><br>
+
 
 
 
