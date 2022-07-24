@@ -152,19 +152,13 @@ Now that the cyber-attack has been successfully contained, you are also tasked w
 <code>https://github.com/mikesplain/openvas-docker</code><br>
 <code>docker pull mikesplain/openvas</code><br>
 <code>docker run -d -p 443:443 -p 9390:9390 --name openvas mikesplain/openvas</code><br>
-<code>docker exec -it openvas /bin/bash</code><br>
+
 <code>bash: docker exec -it openvas bash</code><br>
-
-
-    
-    Open file: /etc/default/openvas-gsa (note: apt update -y && apt install vim -y)
-    vim /etc/default/openvas-gsa
-    Add this line:
-    ALLOW_HEADER_HOST=PUT YOUR HOST NAME or IPADDRESS HERE
-    Restart /etc/init.d/openvas-gsa restart
-    Check on browser -> Ok!.
-    
-<code>ifconfif</code><br>
+<code>apt update -y && apt install nano -y</code><br>
+<code>ifconfig</code><br>
+<code>nano /etc/default/openvas-gsa</code><br>
+<code>ALLOW_HEADER_HOST=172.17.0.3</code><br>
+<code>/etc/init.d/openvas-gsa restart</code><br>
 <code>https://172.17.0.3/omp?cmd=get_tasks&token=2f359627-1ac1-41e3-8ab9-ab354d088bef</code><br>
 <code>Username: admin Password: admin</code><br>
 
