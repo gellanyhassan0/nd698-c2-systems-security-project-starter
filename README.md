@@ -149,21 +149,27 @@ So far, we have figured out that the attack was carried out through brute-forcin
 Now that the cyber-attack has been successfully contained, you are also tasked with further hardening the jump host server. As a first step, perform an OpenVAS vulnerability scan on the system and provide a snapshot of the vulnerabilities identified by the scan. Name the snapshot as`openvas_vulnerability_report.png`. 
 
 # Docker deploy
-<code>docker pull jeffleder/gvm-docker</code><br>
-<code>docker run --detach --publish 127.0.0.1:9392:9392 -e USERNAME="admin" -e PASSWORD="admin" --volume openvas:/data --name openvas --restart unless-stopped jeffleder/gvm-docker</code><br>
+<code>docker pull mikesplain/openvas</code><br>
+<code>docker run -d -p 443:443 -p 9390:9390 --name openvas mikesplain/openvas</code><br>
+
+
 
 <code>[http://127.0.0.1:9392/](http://127.0.0.1:9392/login)</code><br>
 <code>Username: admin Password: admin</code><br>
 
 <code>docker exec -it openvas /bin/bash</code><br>
 
-<code>gvm-check-setup</code><br>
-<code>apt-get upgrade gvm</code><br>
-<code>runuser -u _gvm -- gvmd --create-user="myuser" --password="mypassword" || true</code><br>
-<code>sudo runuser -u _gvm -- gvmd --create-user=Admin --new-password=12345</code><br>
-<code>User created with password '54e6f40d-e4e5-4f84-aad2-dd24bd7578a5'.</code><br>
 
-
+    Access to container's bash: docker exec -it openvas bash
+    Open file: /etc/default/openvas-gsa (note: apt update -y && apt install vim -y)
+    vim /etc/default/openvas-gsa
+    Add this line:
+    ALLOW_HEADER_HOST=PUT YOUR HOST NAME or IPADDRESS HERE
+    Restart /etc/init.d/openvas-gsa restart
+    Check on browser -> Ok!.
+    
+<code>ifconfif</code><br>
+<code>https://172.17.0.3/omp?cmd=get_tasks&token=2f359627-1ac1-41e3-8ab9-ab354d088bef</code><br>
 
 <code>docker container ls</code><br>
 <code>docker container rm [container-name]</code><br>
