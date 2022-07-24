@@ -170,7 +170,7 @@ Now that the cyber-attack has been successfully contained, you are also tasked w
 <code>docker container rm  ba14322efb5d</code><br>
 
 <code>docker ps -a</code><br>
-<code>docker r
+<code>docker rm </code><br>
 
 # scanning test by deploy metasploitable
 <code>docker run --name metasploitable -it tleemcjr/metasploitable2:latest sh -c "/bin/services.sh && bash"</code><br>
