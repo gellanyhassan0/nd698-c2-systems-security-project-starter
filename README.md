@@ -159,7 +159,7 @@ Now that the cyber-attack has been successfully contained, you are also tasked w
 <code>nano /etc/default/openvas-gsa</code><br>
 <code>ALLOW_HEADER_HOST=172.17.0.3</code><br>
 <code>/etc/init.d/openvas-gsa restart</code><br>
-<code>https://172.17.0.3/omp?cmd=get_tasks&token=2f359627-1ac1-41e3-8ab9-ab354d088bef</code><br>
+<code>https://172.17.0.3/</code><br>
 <code>Username: admin Password: admin</code><br>
 
 <code>docker container ls</code><br>
