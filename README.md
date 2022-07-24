@@ -149,18 +149,14 @@ So far, we have figured out that the attack was carried out through brute-forcin
 Now that the cyber-attack has been successfully contained, you are also tasked with further hardening the jump host server. As a first step, perform an OpenVAS vulnerability scan on the system and provide a snapshot of the vulnerabilities identified by the scan. Name the snapshot as`openvas_vulnerability_report.png`. 
 
 # Docker deploy
+<code>https://github.com/mikesplain/openvas-docker</code><br>
 <code>docker pull mikesplain/openvas</code><br>
 <code>docker run -d -p 443:443 -p 9390:9390 --name openvas mikesplain/openvas</code><br>
-
-
-
-<code>[http://127.0.0.1:9392/](http://127.0.0.1:9392/login)</code><br>
-<code>Username: admin Password: admin</code><br>
-
 <code>docker exec -it openvas /bin/bash</code><br>
+<code>bash: docker exec -it openvas bash</code><br>
 
 
-    Access to container's bash: docker exec -it openvas bash
+    
     Open file: /etc/default/openvas-gsa (note: apt update -y && apt install vim -y)
     vim /etc/default/openvas-gsa
     Add this line:
@@ -170,6 +166,7 @@ Now that the cyber-attack has been successfully contained, you are also tasked w
     
 <code>ifconfif</code><br>
 <code>https://172.17.0.3/omp?cmd=get_tasks&token=2f359627-1ac1-41e3-8ab9-ab354d088bef</code><br>
+<code>Username: admin Password: admin</code><br>
 
 <code>docker container ls</code><br>
 <code>docker container rm [container-name]</code><br>
