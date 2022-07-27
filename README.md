@@ -158,7 +158,7 @@ Now that the cyber-attack has been successfully contained, you are also tasked w
 <code>ifconfig</code><br>
 <code>nano /etc/default/openvas-gsa</code><br>
 <code>ALLOW_HEADER_HOST=172.17.0.3</code><br>
-<code>sed -i 's/#ALLOW_HEADER_HOST=/ALLOW_HEADER_HOST=172.17.0.2/g' /etc/default/openvas-gsa<code><br>
+<code>sed -i 's/#ALLOW_HEADER_HOST=/ALLOW_HEADER_HOST=172.17.0.2/g' /etc/default/openvas-gsa</code><br>
 <code>/etc/init.d/openvas-gsa restart</code><br>
 <code>https://172.17.0.3/</code><br>
 <code>Username: admin Password: admin</code><br>
